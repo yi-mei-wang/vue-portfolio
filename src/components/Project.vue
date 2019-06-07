@@ -2,9 +2,7 @@
   <div class="proj-card">
     <img src="../assets/laptop.png" class="proj-thumbnail">
     <div class="proj-description">
-      <p>
-        This is the description of my project.
-      </p>
+      <p>This is the description of my project.</p>
       <p>
         Here is a
         <a href="http://">link</a>.
@@ -15,8 +13,7 @@
 
 <script>
 export default {
-  name: "Project",
-  props: ["proj"]
+  name: "Project"
 };
 </script>
 
