@@ -2,8 +2,8 @@
   <div id="app">
     <h1>{{ msg }}</h1>
     <Profile/>
-    <Skills/>
     <Contact/>
+    <Skills/>
     <Projects/>
   </div>
 </template>
@@ -38,6 +38,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  box-sizing: border-box;
 }
 
 h1,
@@ -66,5 +67,9 @@ a {
   border: 1px solid #bbb;
   margin: 3rem;
   padding: 1rem 2rem;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
 }
 </style>

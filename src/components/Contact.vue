@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h2>HELLO CALL ME MAYBE</h2>
+    <h2 class="code">def contact():</h2>
     <!-- Add in some icons/logos -->
     <a href="mailto:contactmei.tk@gmail.com" target="blank">contactmei.tk@gmail.com</a>
     <br>
