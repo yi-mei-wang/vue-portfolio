@@ -5,11 +5,13 @@
     <Contact/>
     <Skills/>
     <Projects/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import Projects from "./containers/Projects";
 import Skills from "./containers/Skills";
@@ -23,6 +25,7 @@ export default {
   },
   components: {
     Contact,
+    Footer,
     Profile,
     Projects,
     Skills
