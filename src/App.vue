@@ -67,6 +67,8 @@ a {
   border: 1px solid #bbb;
   margin: 3rem;
   padding: 1rem 2rem;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+  background-color: beige;
 }
 
 .code {
