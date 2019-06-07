@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <Skills/>
+    <Profile/>
     <Contact/>
+    <Skills/>
     <Projects/>
   </div>
 </template>
 
 <script>
 import Contact from "./components/Contact";
+import Profile from "./components/Profile";
 import Projects from "./containers/Projects";
 import Skills from "./containers/Skills";
 
@@ -21,6 +23,7 @@ export default {
   },
   components: {
     Contact,
+    Profile,
     Projects,
     Skills
   }
@@ -35,6 +38,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  box-sizing: border-box;
 }
 
 h1,
@@ -63,5 +67,11 @@ a {
   border: 1px solid #bbb;
   margin: 3rem;
   padding: 1rem 2rem;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+  background-color: beige;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
 }
 </style>

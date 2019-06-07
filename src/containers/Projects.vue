@@ -2,9 +2,9 @@
   <div class="main">
     <h2>Projects</h2>
     <div class="projects">
-      <Project class="project"/>
-      <Project class="project"/>
-      <Project class="project"/>
+      <Project class="project" title="Meistagram"/>
+      <Project class="project" title="Meisterkram"/>
+      <Project class="project" title="Advengers"/>
     </div>
   </div>
 </template>
