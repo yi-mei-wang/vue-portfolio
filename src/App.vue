@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <h1>{{ projs }}</h1>
-    <input v-model="projs">
     <Projects v-bind:proj="projs"/>
   </div>
 </template>
@@ -13,7 +12,7 @@ export default {
   name: "app",
   data() {
     return {
-      projs: "Welcome to Your Vue.js App"
+      projs: "Welcome to Mei's Portfolio"
     };
   },
   components: {
@@ -24,7 +23,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Avenir", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
