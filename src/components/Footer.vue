@@ -1,5 +1,5 @@
 <template>
-  <div id="footer">Wang Yi Mei© 2019</div>
+  <div id="footer">Wang Yi Mei© 2019 | Created on Vue.js</div>
 </template>
 
 <script>
