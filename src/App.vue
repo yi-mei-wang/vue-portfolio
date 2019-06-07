@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <h1>{{ projs }}</h1>
-    <Projects v-bind:proj="projs"/>
+    <h1>{{ msg }}</h1>
+    <Contact/>
+    <Projects/>
   </div>
 </template>
 
 <script>
+import Contact from "./components/Contact";
 import Projects from "./containers/Projects";
 
 export default {
   name: "app",
   data() {
     return {
-      projs: "Welcome to Mei's Portfolio"
+      msg: "Welcome to Mei's Portfolio"
     };
   },
   components: {
+    Contact,
     Projects
   }
 };
@@ -48,5 +51,11 @@ li {
 
 a {
   color: #42b983;
+}
+
+.main {
+  border: 1px solid #bbb;
+  margin: 3rem;
+  padding: 2rem;
 }
 </style>
