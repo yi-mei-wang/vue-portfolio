@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
+    <Profile/>
     <Skills/>
     <Contact/>
     <Projects/>
@@ -9,6 +10,7 @@
 
 <script>
 import Contact from "./components/Contact";
+import Profile from "./components/Profile";
 import Projects from "./containers/Projects";
 import Skills from "./containers/Skills";
 
@@ -21,6 +23,7 @@ export default {
   },
   components: {
     Contact,
+    Profile,
     Projects,
     Skills
   }
