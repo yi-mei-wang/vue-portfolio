@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
+    <Skills/>
     <Contact/>
     <Projects/>
   </div>
@@ -9,6 +10,7 @@
 <script>
 import Contact from "./components/Contact";
 import Projects from "./containers/Projects";
+import Skills from "./containers/Skills";
 
 export default {
   name: "app",
@@ -19,7 +21,8 @@ export default {
   },
   components: {
     Contact,
-    Projects
+    Projects,
+    Skills
   }
 };
 </script>
@@ -51,11 +54,14 @@ li {
 
 a {
   color: #42b983;
+  &:hover {
+    color: red;
+  }
 }
 
 .main {
   border: 1px solid #bbb;
   margin: 3rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 </style>

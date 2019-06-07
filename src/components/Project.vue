@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .proj-thumbnail {
   width: 200px;
   height: 150px;
