@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <Header data-aos="fade-right"/>
-    <Profile data-aos="fade-up"/>
+    <Profile data-aos="fade-left"/>
     <!-- <h1>{{ msg }}</h1> -->
-    <Contact data-aos="fade-up"/>
-    <Skills data-aos="fade-up"/>
-    <Projects data-aos="fade-up"/>
+    <Contact data-aos="fade-right"/>
+    <Skills data-aos="fade-left"/>
+    <Projects data-aos="fade-right"/>
     <Footer/>
   </div>
 </template>

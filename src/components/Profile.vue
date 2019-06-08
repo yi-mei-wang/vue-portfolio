@@ -1,6 +1,7 @@
 <template>
   <div class="main">
-    <h1>Who am I?</h1>
+    <h2>Who am I?</h2>
+    <span class="underline"></span>
     <!-- STORY TIME -->
     <!-- Please rephrase omg -->
     <p>I am a full stack web developer looking for full time and freelance opportunities.</p>
@@ -18,5 +19,23 @@ export default {
 };
 </script>
 
-<style>
+
+<style lang="scss" scoped>
+/* @import "../stylesheets/Profile.scss"; */
+
+.main {
+  height: 80vh;
+  padding: 2rem;
+
+  h2 {
+    margin: -10px;
+  }
+}
+
+.underline {
+  height: 5px;
+  width: 100px;
+  background-color: red;
+  display: inline-block;
+}
 </style>
