@@ -10,7 +10,8 @@ export default {};
 @import "../stylesheets/_variables.scss";
 
 #footer {
-  background-color: $secondary;
+  background-color: $darkgold;
   padding: 0.7rem;
+  color: black;
 }
 </style>

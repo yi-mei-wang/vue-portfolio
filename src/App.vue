@@ -1,7 +1,13 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <Profile/>
+    <Header v-if="header"/>
+
+    <button v-on:click="profile = !profile">Profile</button>
+    <transition name="fade">
+      <Profile v-if="profile"/>
+    </transition>
+
+    <!-- <h1>{{ msg }}</h1> -->
     <Contact/>
     <Skills/>
     <Projects/>
@@ -12,6 +18,7 @@
 <script>
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Projects from "./containers/Projects";
 import Skills from "./containers/Skills";
@@ -20,12 +27,15 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Mei's Portfolio"
+      msg: "Welcome to Mei's Portfolio",
+      profile: false,
+      show: true
     };
   },
   components: {
     Contact,
     Footer,
+    Header,
     Profile,
     Projects,
     Skills
@@ -35,13 +45,13 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", "Avenir", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: rgb(201, 182, 76);
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 h1,
@@ -72,6 +82,7 @@ a {
   padding: 1rem 2rem;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
   background-color: beige;
+  color: black;
 }
 
 .code {
