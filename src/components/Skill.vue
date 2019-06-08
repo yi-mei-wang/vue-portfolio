@@ -10,7 +10,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../stylesheets/_variables.scss";
+
 .skill {
-  border: 1px solid pink;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 1px solid $secondary;
 }
 </style>

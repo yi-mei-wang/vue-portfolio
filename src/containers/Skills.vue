@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h2>MAH SKEELZ</h2>
+    <h2 style="display:block;">MAH SKEELZ</h2>
     <Skill skill="Python"/>
     <Skill skill="JavaScript"/>
     <Skill skill="PostgreSQL"/>
@@ -21,5 +21,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.main {
+  display: inline;
+}
 </style>
