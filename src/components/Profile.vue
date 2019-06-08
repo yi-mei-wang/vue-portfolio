@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1 class="code">class Wang_Yi_Mei():</h1>
+    <h1>Who am I?</h1>
     <!-- STORY TIME -->
     <!-- Please rephrase omg -->
     <p>I am a full stack web developer looking for full time and freelance opportunities.</p>
