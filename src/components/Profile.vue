@@ -1,41 +1,77 @@
 <template>
   <div class="main">
+    <h3>Story time!</h3>
+    <span class="underline"></span>
+
+    <p>
+      In my past life, I was a
+      Psychology graduate who went on to become an English teacher. However, I knew working with children was not my calling. I felt lost then because I didn't know what to do.
+    </p>
+    <p>That was until I met programming and the rest, as they said, was history. I started with Harvard's CS50 and swiftly fell in love with C (seriously). I eventually moved on to Python and JavaScript.</p>
+
     <h2>Who am I?</h2>
     <span class="underline"></span>
     <!-- STORY TIME -->
     <!-- Please rephrase omg -->
-    <p>I am a full stack web developer looking for full time and freelance opportunities.</p>
-    <p>In my past life, I was a Psychology graduate who went on to become an English teacher. While it was an enjoyable experience, I knew working with children was not my calling. I felt lost then because I didn't know what to do.</p>
-    <p>That was until I met programming and the rest, as they said, was history.</p>
-    <p>I started with C and swiftly fell in love (seriously). I eventually moved on to Python and JavaScript.</p>
-    <p>My strengths include strong problem-solving, debugging skills, and logical thinking skills, traits that make me a good programmer.</p>
+    <p>
+      I am a
+      <span class="highlight">full stack web developer</span> looking for full time and freelance opportunities.
+    </p>
+
+    <p>
+      My background in
+      Psychology has made me more attuned to user needs and behaviour, which helps me to design user interfaces with
+      <span
+        class="highlight"
+      >good UX</span>.
+    </p>
+    <p>
+      On the other hand, my strong
+      <span class="highlight">problem-solving</span>,
+      <span class="highlight">debugging</span>, and
+      <span class="highlight">logical thinking skills</span> make me a good programmer, especially when working on the backend.
+    </p>
+
     <p>Contact me via any of the channels below. I would love to talk to you about how I can help you achieve your design and/or development goals.</p>
   </div>
 </template>
 
 <script>
+import Skills from "../containers/Skills";
+
 export default {
-  name: "Profile"
+  name: "Profile",
+  components: { Skills }
 };
 </script>
 
 
 <style lang="scss" scoped>
 /* @import "../stylesheets/Profile.scss"; */
+@import "../stylesheets/_variables.scss";
 
 .main {
   height: 80vh;
-  padding: 2rem;
+  padding: 3rem;
 
-  h2 {
-    margin: -10px;
+  h2,
+  h3 {
+    margin-bottom: -10px;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
   }
 }
 
 .underline {
   height: 5px;
-  width: 100px;
-  background-color: red;
+  width: 80px;
+  background-color: $secondary;
   display: inline-block;
+}
+
+.highlight {
+  background-color: palegoldenrod;
 }
 </style>
