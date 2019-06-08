@@ -1,26 +1,27 @@
 #header {
   display: flex;
   height: 100vh;
-  width: 98vw;
+  width: 100vw;
+  margin: 0;
 }
 
 #left,
 #right {
   height: 100%;
   flex-grow: 1;
-}
+  // }
 
-#left {
+  // #left,
+  // #right {
   background-color: $darkgold;
   color: black;
   font-family: "Abril Fatface", "sans serif";
-  font-size: 6rem;
+  font-size: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  border-right: 50px solid white;
-  padding-right: 1rem;
+  // border-right: 50px solid white;
+  padding: 1rem;
 
   p {
     margin: 0;
@@ -28,14 +29,19 @@
   }
 }
 
-#white-stripe {
-  background-color: white;
-  width: 50px;
-  height: 100%;
+#right {
+  align-items: flex-start;
+  background-color: turquoise;
 }
 
-#right {
-  background-color: none;
+#left {
+  align-items: flex-end;
+}
+
+.ampersand {
+  // position: relative;
+  // left: 50px;
+  transform: scaleX(-1);
 }
 
 /* If screen is smaller than a large mobile, do not show */

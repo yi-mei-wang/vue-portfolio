@@ -2,14 +2,20 @@
   <!-- This should be responsive in case someone is viewing this on mobile -->
   <div id="header">
     <div id="left">
-      <p>I'm Mei</p>
-      <p>&</p>
-      <p>I'm a</p>
-      <p>Full Stack</p>
-      <p>Web Developer.</p>
+      <p>I'm</p>
+      <p class="ampersand">&</p>
+      <p>I'm</p>
+      <p>Full</p>
+      <p>Web</p>
     </div>
     <!-- Should disappear if view width is smaller than a mobile -->
-    <div id="right"></div>
+    <div id="right">
+      <p>Mei</p>
+      <p>&</p>
+      <p>a</p>
+      <p>Stack</p>
+      <p>Developer.</p>
+    </div>
   </div>
 </template>
 
