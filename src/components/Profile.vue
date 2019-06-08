@@ -47,31 +47,5 @@ export default {
 
 
 <style lang="scss" scoped>
-/* @import "../stylesheets/Profile.scss"; */
-@import "../stylesheets/_variables.scss";
-
-.main {
-  height: 80vh;
-  padding: 3rem;
-
-  h2,
-  h3 {
-    margin-bottom: -10px;
-  }
-
-  h3 {
-    margin-top: 1.5rem;
-  }
-}
-
-.underline {
-  height: 5px;
-  width: 80px;
-  background-color: $secondary;
-  display: inline-block;
-}
-
-.highlight {
-  background-color: palegoldenrod;
-}
+@import "../stylesheets/Profile.scss";
 </style>
