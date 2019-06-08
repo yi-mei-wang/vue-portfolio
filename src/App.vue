@@ -1,15 +1,10 @@
 <template>
   <div id="app">
-    <Header v-if="header"/>
-
-    <button v-on:click="profile = !profile">Profile</button>
-    <transition name="fade">
-      <Profile v-if="profile"/>
-    </transition>
-
+    <Header data-aos="fade-right"/>
+    <Profile data-aos="fade-up"/>
     <!-- <h1>{{ msg }}</h1> -->
-    <Contact/>
-    <Skills/>
+    <Contact data-aos="fade-up"/>
+    <Skills data-aos="fade-up"/>
     <Projects/>
     <Footer/>
   </div>
@@ -27,9 +22,7 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Mei's Portfolio",
-      profile: false,
-      show: true
+      msg: "Welcome to Mei's Portfolio"
     };
   },
   components: {
@@ -86,6 +79,6 @@ a {
 }
 
 .code {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Abril Fatface", "Courier New", Courier, monospace;
 }
 </style>
