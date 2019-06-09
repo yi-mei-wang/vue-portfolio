@@ -39,4 +39,7 @@ export default {
 
 <style scoped>
 @import "../stylesheets/Skills.scss";
+.main {
+  width: 60%;
+}
 </style>

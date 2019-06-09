@@ -4,8 +4,8 @@
     <Profile data-aos="fade-up"/>
     <!-- <h1>{{ msg }}</h1> -->
     <Skills data-aos="fade-up"/>
-    <Contact data-aos="fade-up"/>
     <Projects data-aos="fade-up"/>
+    <Contact data-aos="fade-up"/>
     <Footer/>
   </div>
 </template>

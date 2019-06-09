@@ -52,8 +52,32 @@ a {
   width: 80vw;
   clear: both;
   box-sizing: border-box;
-
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   // &:nth-child(2n) {
   //   float: right;
   // }
+}
+
+.wrapper {
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.notch {
+  /* height: 50px;
+  width: 50px;
+  background-color: white; */
+  height: 0;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid white;
+  left: 50%;
+  top: 8px;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  position: absolute;
 }
