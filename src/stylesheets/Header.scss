@@ -3,20 +3,19 @@
   height: 80vh;
   width: 100vw;
   margin: 0;
+  padding: 0;
   overflow: hidden;
-  border-top: 50px solid white;
-  border-bottom: 50px solid white;
+  border-top: 30px solid white;
+  border-bottom: 30px solid white;
 }
 
 #left,
 #right {
   height: 100%;
-  flex-grow: 1;
-  // }
-
-  // #left,
-  // #right {
-  background-color: $darkgold;
+  // Ensures share the width equally
+  flex-basis: 50%;
+  // Grows according to the size of the content
+  // flex-grow: 1;
   color: black;
   font-family: "Abril Fatface", "sans serif";
   font-size: 5rem;
@@ -39,11 +38,10 @@
 
 #left {
   align-items: flex-end;
+  background-color: $darkgold;
 }
 
 .ampersand {
-  // position: relative;
-  // left: 50px;
   transform: scaleX(-1);
 }
 

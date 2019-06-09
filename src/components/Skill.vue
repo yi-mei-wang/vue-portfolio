@@ -13,9 +13,12 @@ export default {
 @import "../stylesheets/_variables.scss";
 
 .skill {
-  height: 100px;
+  height: 20px;
   width: 100px;
-  display: inline-block;
-  border: 1px solid $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  margin: 0.5rem;
 }
 </style>
