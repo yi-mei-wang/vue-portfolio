@@ -51,6 +51,7 @@ a {
   color: black;
   width: 80vw;
   clear: both;
+  box-sizing: border-box;
 
   // &:nth-child(2n) {
   //   float: right;

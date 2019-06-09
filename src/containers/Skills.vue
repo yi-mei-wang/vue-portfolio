@@ -2,7 +2,6 @@
   <div class="main">
     <h2>MAH SKEELZ</h2>
     <div class="skills-section">
-      <div></div>
       <div class="skill-title">
         <h4>Languages</h4>
       </div>
@@ -39,16 +38,14 @@ export default {
 </script>
 
 <style scoped>
-/* .main {
-  display: inline;
-} */
-
 .skills-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin: 1rem;
+  padding: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   /* border: 1px solid black; */
 }
 .skill-title {
@@ -68,7 +65,7 @@ export default {
   }
 }
 
-@media (min-width: 426px) and (max-width: 800px) {
+@media (min-width: 426px) and (max-width: 985px) {
   .skills-section {
     flex-wrap: nowrap;
   }
