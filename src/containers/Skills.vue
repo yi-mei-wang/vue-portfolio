@@ -4,7 +4,9 @@
       <div class="notch"></div>
     </div>
     <div class="main">
-      <h2>MAH SKEELZ</h2>
+      <h2>Skills</h2>
+      <span class="underline"></span>
+
       <div class="skills-section">
         <div class="skill-title">
           <h4>Languages</h4>
@@ -42,9 +44,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import "../stylesheets/Skills.scss";
 .main {
-  width: 60%;
+  h2,
+  h3 {
+    margin-bottom: -10px;
+  }
 }
 </style>
