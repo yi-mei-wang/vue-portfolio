@@ -50,4 +50,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../stylesheets/Profile.scss";
+.main {
+  // height: 80vh;
+
+  h2,
+  h3 {
+    margin-bottom: -10px;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+  }
+}
 </style>
