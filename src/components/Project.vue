@@ -4,24 +4,47 @@
       <h3>{{title}}</h3>
       <img src="../assets/laptop.png" class="proj-thumbnail">
       <div class="proj-description">
-        <p>This is the description of my project.</p>
+        <p>{{description}}</p>
         <p>
           Here is a
-          <a href="http://">link</a>.
+          <a :href="link">link</a>.
         </p>
       </div>
     </div>
+
+    <button v-on:click="show = !show">Toggle</button>
+    <transition name="fade">
+      <div v-if="show" class="description">
+        {{description}}
+        <button v-on:click="show = !show">Toggle</button>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
   name: "Project",
-  props: ["title"]
+  props: { title: String, link: String, description: String },
+  data() {
+    return {
+      show: false
+    };
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+.description {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 .proj-thumbnail {
   width: 200px;
   height: 150px;
@@ -40,5 +63,13 @@ export default {
 
 .proj-description {
   margin: 1rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

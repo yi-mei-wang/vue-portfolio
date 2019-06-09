@@ -5,10 +5,27 @@
     </div>
     <div class="main">
       <h2>Projects</h2>
+      <span class="underline"></span>
+
       <div class="projects">
-        <Project class="project" title="Meistagram"/>
-        <Project class="project" title="Meisterkram"/>
-        <Project class="project" title="Advengers"/>
+        <Project
+          class="project"
+          title="Meistagram"
+          link="https://www.google.com"
+          description="generic description passed down as props"
+        />
+        <Project
+          class="project"
+          title="Meisterkram"
+          link="https://www.google.com"
+          description="generic description passed down as props"
+        />
+        <Project
+          class="project"
+          title="Advengers"
+          link="https://www.google.com"
+          description="generic description passed down as props"
+        />
       </div>
     </div>
   </div>
@@ -29,5 +46,10 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+h2,
+h3 {
+  margin-bottom: -10px;
 }
 </style>
