@@ -13,5 +13,10 @@ export default {};
   background-color: $darkgold;
   padding: 0.7rem;
   color: black;
+  display: block;
+  height: 20vh;
+  width: 100vw;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 </style>
