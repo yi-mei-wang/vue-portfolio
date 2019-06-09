@@ -1,3 +1,5 @@
+@import "../stylesheets/_variables.scss";
+
 #app {
   font-family: "Lato Light", "Roboto", "Avenir", "Helvetica Neue", Arial,
     sans-serif;
@@ -44,22 +46,30 @@ a {
 
 .main {
   // border: 5px solid #bbb;
+  // box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
   margin: 2rem 0;
   padding: 2rem 4rem;
-  // box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
   background-color: white;
   color: black;
-  width: 80vw;
+  width: 60vw;
   clear: both;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  // &:nth-child(2n) {
-  //   float: right;
-  // }
 }
 
+@media (max-width: 426px) {
+  .main {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+  .main {
+    width: 80vw;
+  }
+}
 .wrapper {
   padding: 0;
   width: 100%;
@@ -80,4 +90,15 @@ a {
   transform: translate(-50%, 0);
   z-index: 1;
   position: absolute;
+}
+
+.underline {
+  height: 5px;
+  width: 80px;
+  background-color: $secondary;
+  display: inline-block;
+}
+
+.highlight {
+  background-color: palegoldenrod;
 }
