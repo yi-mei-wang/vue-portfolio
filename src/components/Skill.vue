@@ -10,7 +10,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../stylesheets/_variables.scss";
+
 .skill {
-  border: 1px solid pink;
+  height: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  margin: 0.5rem;
 }
 </style>

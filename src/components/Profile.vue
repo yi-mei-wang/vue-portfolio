@@ -33,6 +33,8 @@
     </p>
 
     <p>Contact me via any of the channels below. I would love to talk to you about how I can help you achieve your design and/or development goals.</p>
+
+    <Skills/>
   </div>
 </template>
 

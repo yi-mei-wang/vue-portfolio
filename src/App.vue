@@ -3,8 +3,8 @@
     <Header data-aos="fade-right"/>
     <Profile data-aos="fade-left"/>
     <!-- <h1>{{ msg }}</h1> -->
-    <Contact data-aos="fade-right"/>
-    <Skills data-aos="fade-left"/>
+    <Skills data-aos="fade-right"/>
+    <Contact data-aos="fade-left"/>
     <Projects data-aos="fade-right"/>
     <Footer/>
   </div>

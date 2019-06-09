@@ -1,14 +1,30 @@
 <template>
   <div class="main">
     <h2>MAH SKEELZ</h2>
-    <Skill skill="Python"/>
-    <Skill skill="JavaScript"/>
-    <Skill skill="PostgreSQL"/>
-    <Skill skill="Flask"/>
-    <Skill skill="Peewee"/>
-    <Skill skill="React"/>
-    <Skill skill="HTML"/>
-    <Skill skill="SCSS"/>
+    <div class="skills-section">
+      <div class="skill-title">
+        <h4>Languages</h4>
+      </div>
+      <Skill skill="JavaScript"/>
+      <Skill skill="HTML"/>
+      <Skill skill="CSS"/>
+      <Skill skill="Python"/>
+    </div>
+    <div class="skills-section">
+      <div class="skill-title">
+        <h4>Frameworks and Technologies</h4>
+      </div>
+      <Skill skill="SCSS"/>
+      <Skill skill="React"/>
+      <Skill skill="Flask"/>
+    </div>
+    <div class="skills-section">
+      <div class="skill-title">
+        <h4>Database</h4>
+      </div>
+      <Skill skill="PostgreSQL"/>
+      <Skill skill="Peewee"/>
+    </div>
   </div>
 </template>
 
@@ -21,5 +37,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@import "../stylesheets/Skills.scss";
 </style>
