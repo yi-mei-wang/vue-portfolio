@@ -52,7 +52,6 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../stylesheets/Profile.scss";
 .main {
   // height: 80vh;
 
@@ -63,6 +62,10 @@ export default {
 
   h3 {
     margin-top: 1.5rem;
+  }
+
+  p {
+    line-height: 1.5rem;
   }
 }
 </style>
