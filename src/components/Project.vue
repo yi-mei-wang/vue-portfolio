@@ -1,22 +1,25 @@
 <template>
-  <div class="proj-card">
-    <div class="inner-div">
-      <h3>{{title}}</h3>
-      <img src="../assets/laptop.png" class="proj-thumbnail">
-      <div class="proj-description">
-        <p>{{description}}</p>
-        <p>
-          Here is a
-          <a :href="link">link</a>.
-        </p>
-      </div>
+  <div>
+    <!-- <div class="proj-card">
+    <div class="inner-div">-->
+    <div class="image-container">
+      <img :src="img" class="proj-thumbnail" v-on:click="show = !show">
     </div>
-
-    <button v-on:click="show = !show">Toggle</button>
+    <!-- </div> -->
     <transition name="fade">
-      <div v-if="show" class="description">
-        {{description}}
-        <button v-on:click="show = !show">Toggle</button>
+      <div v-if="show" class="description-container" v-on:click="show = !show">
+        <div class="description">
+          <h2>{{title}}</h2>
+          <img
+            :src="img"
+            class="proj-thumbnail"
+            style="display:block; margin-left:auto; margin-right: auto;"
+          >
+          <p>{{description}}</p>
+          <p>
+            <a :href="link" target="blank" v-on:click="show = !show">See it live!</a>
+          </p>
+        </div>
       </div>
     </transition>
   </div>
@@ -25,7 +28,8 @@
 <script>
 export default {
   name: "Project",
-  props: { title: String, link: String, description: String },
+  // props: { title: String, link: String, description: String, img: link },
+  props: ["title", "link", "description", "img"],
   data() {
     return {
       show: false
@@ -35,19 +39,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.description {
+.description-container {
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
-  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.3);
 }
+
+.description {
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 0px 35px rgba(255, 255, 255, 0.4);
+
+  p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5rem;
+  }
+}
+
 .proj-thumbnail {
   width: 200px;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -61,7 +85,7 @@ export default {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-.proj-description {
+.image-container {
   margin: 1rem;
 }
 
