@@ -5,6 +5,25 @@
     <title>Mei's portfolio</title>
   </head>
   <body style="background-color: #272822; margin: 0px;">
+    <div style="position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 50px;
+    height: 84vh;
+    background-color: white; z-index: -1"></div>
+      
+    <div style="position: fixed;
+    left: 50%;
+    top: calc(84vh - 25px);
+    transform: translate(-50%, 0%);
+    width: 50px;
+    height: 0;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #272822;
+    z-index: -1"></div>
+
     <div id="app"></div>
     <script src="/dist/build.js"></script>
   </body>
