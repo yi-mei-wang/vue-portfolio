@@ -38,36 +38,5 @@ export default {
 </script>
 
 <style scoped>
-.skills-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 1rem;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  /* border: 1px solid black; */
-}
-.skill-title {
-  width: 150px;
-  text-align: right;
-  margin-right: 1rem;
-  /* border: 1px solid black; */
-}
-@media (max-width: 426px) {
-  .skill-title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .skills-section {
-    justify-content: center;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 985px) {
-  .skills-section {
-    flex-wrap: nowrap;
-  }
-}
+@import "../stylesheets/Skills.scss";
 </style>
