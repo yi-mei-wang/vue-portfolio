@@ -4,6 +4,7 @@
     <div class="inner-div">-->
     <div class="image-container">
       <img :src="img" class="proj-thumbnail" v-on:click="show = !show">
+      <h2>{{title}}</h2>
     </div>
     <!-- </div> -->
     <transition name="fade">
