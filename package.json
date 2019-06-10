@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-carousel": "^0.18.0"
   },
   "browserslist": [
     "> 1%",

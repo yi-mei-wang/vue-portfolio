@@ -16,6 +16,12 @@
             class="proj-thumbnail"
             style="display:block; margin-left:auto; margin-right: auto;"
           >
+
+          <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+            <slide>Slide 1 Content</slide>
+            <slide>Slide 2 Content</slide>
+          </carousel>
+
           <p>{{description}}</p>
           <p>
             <a :href="link" target="blank" v-on:click="show = !show">See it live!</a>
@@ -27,6 +33,7 @@
 </template>
 
 <script>
+import { Carousel, Slide } from "vue-carousel";
 export default {
   name: "Project",
   // props: { title: String, link: String, description: String, img: link },
@@ -35,7 +42,8 @@ export default {
     return {
       show: false
     };
-  }
+  },
+  components: { Carousel, Slide }
 };
 </script>
 
