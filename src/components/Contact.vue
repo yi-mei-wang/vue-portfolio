@@ -11,7 +11,6 @@
         <!-- Add in some icons/logos -->
         <a href="mailto:contactmei.tk@gmail.com" target="blank">contactmei.tk@gmail.com</a>
         <br>
-        <a href="https://wa.me/6581884557" target="blank">+6581884557 (Whatsapp Only)</a>
         <br>
         <a href="http://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
         <br>
