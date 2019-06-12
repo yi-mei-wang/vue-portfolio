@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="image-container">
-      <h3>{{title}}</h3>
+      <h3 class="proj-title">{{title}}</h3>
       <img :src="img0" class="proj-thumbnail" v-on:click="show = !show">
     </div>
     <transition name="fade">
       <div v-if="show" class="description-container" v-on:click.self="show = !show">
         <div class="description">
-          <h2>{{title}}</h2>
+          <h2 class="proj-title">{{title}}</h2>
           <span class="underline"></span>
           <div class="row">
             <div class="col-6">
