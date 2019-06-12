@@ -47,6 +47,9 @@
 
 /* If screen is smaller than a large mobile, do not show */
 @media (max-width: 819px) {
+  #header {
+    border: 20px solid white;
+  }
   #left,
   #right {
     font-size: 4rem;
@@ -54,6 +57,9 @@
 }
 
 @media (max-width: 609px) {
+  #header {
+    border: 15px solid white;
+  }
   #left,
   #right {
     font-size: 3rem;
@@ -61,7 +67,7 @@
 }
 
 @media (max-width: 426px) {
-  .header {
+  #header {
     border: 10px solid white;
   }
   #left,
