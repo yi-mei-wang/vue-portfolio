@@ -8,6 +8,13 @@ module.exports = {
     publicPath: "/dist/",
     filename: "build.js"
   },
+  link: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "static/favicon-16x16.png"
+    }
+  ],
   module: {
     rules: [
       {
