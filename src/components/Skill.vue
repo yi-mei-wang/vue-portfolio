@@ -1,11 +1,14 @@
 <template>
-  <div class="skill">{{skill}}</div>
+  <div>
+    <div class="skill">{{skill}}</div>
+    <img :src="img">
+  </div>
 </template>
 
 <script>
 export default {
   name: "Skill",
-  props: ["skill"]
+  props: ["skill", "img"]
 };
 </script>
 
@@ -14,11 +17,15 @@ export default {
 
 .skill {
   height: 20px;
-  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $secondary;
+  background-color: $primary;
   margin: 0.5rem;
+}
+
+img {
+  max-width: 100px;
+  margin: 10px;
 }
 </style>

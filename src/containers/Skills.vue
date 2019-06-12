@@ -7,29 +7,30 @@
       <h2>Skills</h2>
       <span class="underline"></span>
 
-      <div class="skills-section">
-        <div class="skill-title">
-          <h4>Languages</h4>
-        </div>
-        <Skill skill="JavaScript"/>
-        <Skill skill="HTML"/>
-        <Skill skill="CSS"/>
-        <Skill skill="Python"/>
+      <div class="skill-title">
+        <h4>Languages</h4>
       </div>
       <div class="skills-section">
-        <div class="skill-title">
-          <h4>Frameworks and Technologies</h4>
-        </div>
-        <Skill skill="SCSS"/>
-        <Skill skill="React"/>
-        <Skill skill="Flask"/>
+        <Skill skill="Python" img="https://meistagram.s3.amazonaws.com/python.png"/>
+        <Skill skill="JavaScript" img="https://meistagram.s3.amazonaws.com/es6.png"/>
+        <Skill skill="HTML" img="https://meistagram.s3.amazonaws.com/html5.png"/>
+        <Skill skill="CSS" img="https://meistagram.s3.amazonaws.com/css3.png"/>
+      </div>
+      <div class="skill-title">
+        <h4>Frameworks and Technologies</h4>
       </div>
       <div class="skills-section">
-        <div class="skill-title">
-          <h4>Database</h4>
-        </div>
-        <Skill skill="PostgreSQL"/>
-        <Skill skill="Peewee"/>
+        <Skill skill="SCSS" img="https://meistagram.s3.amazonaws.com/sass.png"/>
+        <Skill skill="React" img="https://meistagram.s3.amazonaws.com/react.png"/>
+        <Skill skill="REST API" img="https://meistagram.s3.amazonaws.com/rest.png"/>
+        <Skill skill="Flask" img="https://meistagram.s3.amazonaws.com/flask.png"/>
+      </div>
+      <div class="skill-title">
+        <h4>Database</h4>
+      </div>
+      <div class="skills-section">
+        <Skill skill="PostgreSQL" img="https://meistagram.s3.amazonaws.com/postgres.png"/>
+        <Skill skill="Peewee" img="https://meistagram.s3.amazonaws.com/peewee.png"/>
       </div>
     </div>
   </div>
@@ -50,6 +51,10 @@ export default {
   h2,
   h3 {
     margin-bottom: -10px;
+  }
+
+  h4 {
+    margin-bottom: 0;
   }
 }
 </style>
