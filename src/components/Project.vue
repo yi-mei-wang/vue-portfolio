@@ -3,28 +3,42 @@
     <!-- <div class="proj-card">
     <div class="inner-div">-->
     <div class="image-container">
-      <img :src="img" class="proj-thumbnail" v-on:click="show = !show">
-      <h2>{{title}}</h2>
+      <img :src="img0" class="proj-thumbnail" v-on:click="show = !show">
+      <h3>{{title}}</h3>
     </div>
     <!-- </div> -->
     <transition name="fade">
-      <div v-if="show" class="description-container" v-on:click="show = !show">
+      <div v-if="show" class="description-container" v-on:click.self="show = !show">
         <div class="description">
           <h2>{{title}}</h2>
-          <img
-            :src="img"
-            class="proj-thumbnail"
-            style="display:block; margin-left:auto; margin-right: auto;"
-          >
 
-          <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
-            <slide>Slide 1 Content</slide>
-            <slide>Slide 2 Content</slide>
+          <carousel :per-page="1" :mouse-drag="false">
+            <slide>
+              <img
+                :src="img0"
+                class="proj-slide"
+                style="display:block; margin-left:auto; margin-right: auto;"
+              >
+            </slide>
+            <slide>
+              <img
+                :src="img1"
+                class="proj-slide"
+                style="display:block; margin-left:auto; margin-right: auto;"
+              >
+            </slide>
+            <slide>
+              <img
+                :src="img2"
+                class="proj-slide"
+                style="display:block; margin-left:auto; margin-right: auto;"
+              >
+            </slide>
           </carousel>
 
           <p>{{description}}</p>
           <p>
-            <a :href="link" target="blank" v-on:click="show = !show">See it live!</a>
+            <a :href="link" target="blank">See it live!</a>
           </p>
         </div>
       </div>
@@ -37,7 +51,7 @@ import { Carousel, Slide } from "vue-carousel";
 export default {
   name: "Project",
   // props: { title: String, link: String, description: String, img: link },
-  props: ["title", "link", "description", "img"],
+  props: ["title", "link", "description", "img0", "img1", "img2"],
   data() {
     return {
       show: false
@@ -56,7 +70,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(240, 240, 240, 0.8);
 }
 
 .description {
@@ -69,6 +83,7 @@ export default {
   transform: translate(-50%, -50%);
   background-color: white;
   box-shadow: 0 0px 35px rgba(255, 255, 255, 0.4);
+  overflow: scroll;
 
   p {
     width: 50%;
@@ -79,9 +94,16 @@ export default {
 }
 
 .proj-thumbnail {
-  width: 200px;
-  height: 200px;
+  max-width: 300px;
+  max-height: 300px;
   object-fit: cover;
+  box-shadow: 5px 5px 35px rgba(155, 155, 155, 0.5);
+}
+
+.proj-slide {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 1rem;
 }
 
 .proj-card {

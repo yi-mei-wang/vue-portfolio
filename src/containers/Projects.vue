@@ -11,8 +11,10 @@
         <Project
           class="project"
           title="Meistagram"
-          link="https://www.google.com"
-          img="src/assets/laptop.png"
+          link="https://meistagram.yimeiwang.me"
+          img0="https://meistagram.s3.amazonaws.com/meistagram0.png"
+          img1="https://meistagram.s3.amazonaws.com/meistagram1.png"
+          img2="https://meistagram.s3.amazonaws.com/meistagram2.png"
           description="An Instagram clone built using React.js that was completed within the first two weeks of learning the framework. I tried to incorporate as many design elements from Instagram as possible, such as the double-tap-to-like feature. I also learnt how to use the Context API and Higher-Order Components."
         />
         <Project
