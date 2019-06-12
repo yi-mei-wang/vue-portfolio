@@ -11,7 +11,14 @@
 
           <div class="row">
             <div class="col-6">
-              <carousel :per-page="1" :mouse-drag="false">
+              <carousel
+                :per-page="1"
+                :mouse-drag="false"
+                :navigationEnabled="true"
+                :loop="true"
+                :autoplay="true"
+                :autoplayTimeout="3500"
+              >
                 <slide>
                   <img
                     :src="img0"
@@ -64,7 +71,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .description-container {
   width: 100vw;
   height: 100vh;
@@ -73,7 +80,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-  background-color: rgba(240, 240, 240, 0.8);
+  background-color: rgba(20, 20, 20, 0.6);
 }
 
 .description {
@@ -85,7 +92,6 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  box-shadow: 0 0px 35px rgba(255, 255, 255, 0.4);
   overflow: scroll;
 
   p {
@@ -106,16 +112,17 @@ export default {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .col-6 {
-  width: 50%;
+  width: 40%;
   justify-content: center;
 }
 
 .proj-slide {
-  max-width: 350px;
-  width: 100%;
+  max-height: 400px;
+  height: 100%;
   margin: 1rem;
 }
 
@@ -124,8 +131,15 @@ export default {
 }
 
 @media (max-width: 426px) {
-  .col-6 {
+  .proj-slide {
+    max-width: 300px;
     width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .col-6 {
+    width: 90%;
   }
 }
 
@@ -133,6 +147,7 @@ export default {
 .fade-leave-active {
   transition: opacity 0.5s ease-in-out;
 }
+
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }

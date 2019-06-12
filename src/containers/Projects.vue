@@ -29,8 +29,10 @@
         <Project
           class="project"
           title="Advengers"
-          link="https://www.google.com"
-          img="src/assets/laptop.png"
+          link="https://advengers.yimeiwang.me"
+          img0="https://meistagram.s3.amazonaws.com/advengers0.png"
+          img1="https://meistagram.s3.amazonaws.com/advengers1.png"
+          img2="https://meistagram.s3.amazonaws.com/advengers2.png"
           description="A billboard advert automator to make the lives of marketers and billboard vendors easier. Currently, the advert life cycle can be rather long and tedious. The software simplifies and handles everything, from the receiving of orders, scheduling of time slots, moderating of advert content and updating of billboard. The front end was built in React while the back-end server was built in Python. I wrote a script to train an AI model to identify and remove content that is not allowed on the advertising platform, such as alcohol, cigarettes and weapons."
         />
       </div>
