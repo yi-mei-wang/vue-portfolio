@@ -20,8 +20,10 @@
         <Project
           class="project"
           title="Meisterkram"
-          link="https://www.google.com"
-          img="src/assets/laptop.png"
+          link="https://meisterkram.yimeiwang.me"
+          img0="https://meistagram.s3.amazonaws.com/meisterkram0.png"
+          img1="https://meistagram.s3.amazonaws.com/meisterkram1.png"
+          img2="https://meistagram.s3.amazonaws.com/meisterkram3.png"
           description="Yet another Instagram clone, but built using Python Flask. This was my first time working on the full stack. Implemented additional features such as Google OAuth to manage login and a payment feature to allow Meisterkrammers to make a donation to other users."
         />
         <Project
