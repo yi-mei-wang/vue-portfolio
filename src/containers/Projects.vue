@@ -6,6 +6,8 @@
     <div class="main">
       <h2>Projects</h2>
       <span class="underline"></span>
+      <br>
+      <small>Click on the images to find out more!</small>
 
       <div class="projects">
         <Project
