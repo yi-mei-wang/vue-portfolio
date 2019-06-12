@@ -48,11 +48,6 @@ export default {
 <style scoped lang="scss">
 @import "../stylesheets/Skills.scss";
 .main {
-  h2,
-  h3 {
-    margin-bottom: -10px;
-  }
-
   h4 {
     margin-bottom: 0;
   }

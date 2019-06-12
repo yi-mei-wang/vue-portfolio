@@ -26,8 +26,4 @@ export default {
 </script>
 
 <style scoped>
-h2,
-h3 {
-  margin-bottom: -10px;
-}
 </style>

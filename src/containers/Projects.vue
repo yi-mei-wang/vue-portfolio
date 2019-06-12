@@ -56,9 +56,4 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-h2,
-h3 {
-  margin-bottom: -10px;
-}
 </style>

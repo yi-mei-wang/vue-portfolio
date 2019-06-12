@@ -8,7 +8,7 @@
       <div v-if="show" class="description-container" v-on:click.self="show = !show">
         <div class="description">
           <h2>{{title}}</h2>
-
+          <span class="underline"></span>
           <div class="row">
             <div class="col-6">
               <carousel
