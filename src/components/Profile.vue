@@ -19,7 +19,7 @@
       <!-- Please rephrase omg -->
       <p>
         I am a
-        <span class="highlight">full stack web developer</span> looking for full time and freelance opportunities.
+        <span class="highlight">full stack web developer</span> looking for freelance opportunities.
       </p>
 
       <p>
@@ -53,13 +53,6 @@ export default {
 
 <style lang="scss" scoped>
 .main {
-  // height: 80vh;
-
-  h2,
-  h3 {
-    margin-bottom: -10px;
-  }
-
   h3 {
     margin-top: 1.5rem;
   }
