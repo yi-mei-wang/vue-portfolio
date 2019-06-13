@@ -4,42 +4,47 @@
       <div class="notch"></div>
     </div>
     <div class="main">
-      <h2>Drop me a line!</h2>
+      <h2>Get in touch!</h2>
       <span class="underline"></span>
 
-      <!-- <div>
-        
-        <a href="mailto:contactmei.tk@gmail.com" target="blank">contactmei.tk@gmail.com</a>
-        <br>
-        <a href="https://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
-        <br>
-        <a href="https://www.github.com/yi-mei-wang" target="blank">Github</a>
-      </div>-->
+      <div class="contact-wrapper">
+        <div id="form">
+          <h3>Drop me a line!</h3>
+          <form>
+            <transition name="fade">
+              <div v-if="show" class="flash">Your message has been sent!</div>
+            </transition>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="email">
+            </div>
+            <div class="form-group">
+              <label for="number">Contact number</label>
+              <input type="text" name="number">
+            </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea name="msg" rows="3"></textarea>
+            </div>
 
-      <div class="form">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" name="email">
-          </div>
-          <div class="form-group">
-            <label for="number">Contact number</label>
-            <input type="text" name="number">
-          </div>
-          <div class="form-group">
-            <label for="message">Your message</label>
-            <textarea name="msg" rows="3"></textarea>
-          </div>
+            <!-- On click, call function -->
+            <div class="form-group">
+              <button @click="handleClick">SEND MESSAGE</button>
+            </div>
+          </form>
+        </div>
 
-          <!-- On click, call function -->
-          <div class="form-group">
-            <button @click="handleClick">SUBMIT</button>
-          </div>
-        </form>
+        <div id="contact-links">
+          <a href="mailto:contactmei.tk@gmail.com" target="blank">contactmei.tk@gmail.com</a>
+          <br>
+          <a href="https://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
+          <br>
+          <a href="https://www.github.com/yi-mei-wang" target="blank">Github</a>
+        </div>
       </div>
     </div>
   </div>
@@ -50,7 +55,11 @@ import axios from "axios";
 
 export default {
   name: "Contact",
-  // define methods
+  data() {
+    return {
+      show: false
+    };
+  },
   methods: {
     handleClick: function(e) {
       let data = JSON.stringify({
@@ -59,11 +68,12 @@ export default {
         msg: "oops"
       });
       e.preventDefault();
-      alert("test");
       axios
         .post("https://hooks.zapier.com/hooks/catch/5153017/vjks0j/", data)
         .then(res => {
-          console.log(res);
+          if (res.data.status === "success") {
+            this.show = true;
+          }
         })
         .catch(err => {
           console.log(err);
@@ -75,11 +85,39 @@ export default {
 
 <style scoped lang="scss">
 @import "../stylesheets/_variables.scss";
-.form {
+
+.main {
+  width: 100vw;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.flash {
+  width: 100%;
+  background: $palepurple;
+  padding: 0.5rem;
+}
+
+.contact-wrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+
+#form,
+#contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(80vw / 2);
+  min-width: 250px;
+  border: 1px solid blue;
+  margin: 0.5rem;
 }
 
 form {
@@ -114,7 +152,7 @@ input {
 }
 
 button {
-  width: 100px;
+  padding: 0.5rem;
   height: 40px;
   border-radius: 0;
   letter-spacing: 2px;
