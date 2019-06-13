@@ -48,11 +48,18 @@
         </div>
 
         <div id="contact-links">
-          <a href="mailto:contactmei.tk@gmail.com" target="blank">contactmei.tk@gmail.com</a>
-          <br>
-          <a href="https://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
-          <br>
-          <a href="https://www.github.com/yi-mei-wang" target="blank">Github</a>
+          <div>
+            <h3>Other links</h3>
+            <div id="links">
+              <div class="link-group">
+                <a href="https://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
+              </div>
+
+              <div class="link-group">
+                <a href="https://www.github.com/yi-mei-wang" target="blank">Github</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -145,7 +152,6 @@ h3 {
   justify-content: center;
   width: 100%;
   margin-top: 1rem;
-  border: 1px solid black;
 }
 
 #form,
@@ -155,18 +161,20 @@ h3 {
   justify-content: center;
   width: calc(80vw / 2);
   min-width: 250px;
-  border: 1px solid blue;
   margin: 0.5rem;
 }
 
-form {
+form,
+#links {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
-.form-group {
+.form-group,
+.link-group {
   width: 80%;
   display: block;
 }
