@@ -23,6 +23,10 @@ h3 {
 
   span {
     margin-left: 0.5rem;
+    &:hover {
+      text-shadow: 0 0 5px $darkgold;
+      cursor: pointer;
+    }
   }
 }
 
