@@ -1,0 +1,98 @@
+@import "../stylesheets/_variables.scss";
+
+.wrapper,
+.main {
+  margin-bottom: 0;
+}
+
+.main {
+  width: 100vw;
+  border-bottom: none;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.flash-success,
+.flash-failure {
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.flash-success {
+  background: $success;
+}
+
+.flash-failure {
+  background: $failure;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#form,
+#contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(80vw / 2);
+  min-width: 250px;
+  margin: 0.5rem;
+}
+
+form,
+#links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group,
+.link-group {
+  width: 80%;
+  display: block;
+}
+
+label {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #666;
+}
+
+input {
+  height: 1.6rem;
+}
+
+button {
+  padding: 0.5rem;
+  height: 40px;
+  border-radius: 0;
+  letter-spacing: 2px;
+  border: none;
+  background-color: $vuegreen;
+  font-weight: 800;
+  color: white;
+}
