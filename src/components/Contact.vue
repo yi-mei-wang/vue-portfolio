@@ -105,8 +105,14 @@ export default {
 <style scoped lang="scss">
 @import "../stylesheets/_variables.scss";
 
+.wrapper,
+.main {
+  margin-bottom: 0;
+}
+
 .main {
   width: 100vw;
+  border-bottom: none;
 }
 
 h3 {
