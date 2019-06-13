@@ -1,8 +1,6 @@
 <template>
-  <div class="wrapper">
-    <div class="main">
-      <div>Wang Yi Mei© 2019 | Created on Vue.js</div>
-    </div>
+  <div class="main">
+    <div>Wang Yi Mei© 2019 | Created on Vue.js</div>
   </div>
 </template>
 
@@ -21,10 +19,6 @@ export default {
   width: 100vw;
   margin: 0;
   border-top: none;
-}
-
-.wrapper {
-  margin-top: 0px;
-  display: flex;
+  font-weight: 300;
 }
 </style>

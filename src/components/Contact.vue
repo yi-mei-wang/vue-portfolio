@@ -10,19 +10,21 @@
       <div class="contact-wrapper">
         <div id="form">
           <h3>Drop me a line!</h3>
-          <form>
-            <transition name="fade">
-              <div v-if="success" class="flash-success">
-                Your message has been sent. I'll get back to you ASAP.
-                <span
-                  @click="success=!success"
-                >✕</span>
-              </div>
-              <div v-if="failure" class="flash-failure">
-                All fields are required.
-                <span @click="failure=!failure">✕</span>
-              </div>
-            </transition>
+          <form method="POST">
+            <div class="form-group">
+              <transition name="fade">
+                <div v-if="success" class="flash-success">
+                  Your message has been sent. I'll get back to you ASAP.
+                  <span
+                    @click="success=false"
+                  >✕</span>
+                </div>
+                <div v-if="failure" class="flash-failure">
+                  All fields are required.
+                  <span @click="failure=false">✕</span>
+                </div>
+              </transition>
+            </div>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name">
@@ -110,102 +112,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../stylesheets/_variables.scss";
-
-.wrapper,
-.main {
-  margin-bottom: 0;
-}
-
-.main {
-  width: 100vw;
-  border-bottom: none;
-}
-
-h3 {
-  margin-bottom: 10px;
-}
-
-.flash-success,
-.flash-failure {
-  width: 100%;
-  padding: 0.5rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-
-  span {
-    margin-left: 0.5rem;
-  }
-}
-
-.flash-success {
-  background: $success;
-}
-
-.flash-failure {
-  background: $failure;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-#form,
-#contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: calc(80vw / 2);
-  min-width: 250px;
-  margin: 0.5rem;
-}
-
-form,
-#links {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-group,
-.link-group {
-  width: 80%;
-  display: block;
-}
-
-label {
-  margin: 0.5rem 0.5rem 0 0.5rem;
-  display: block;
-  text-align: left;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin: 0.5rem;
-  font-size: 1rem;
-  border: none;
-  border-bottom: 1px solid #666;
-}
-
-input {
-  height: 1.6rem;
-}
-
-button {
-  padding: 0.5rem;
-  height: 40px;
-  border-radius: 0;
-  letter-spacing: 2px;
-  border: none;
-  background-color: $vuegreen;
-  font-weight: 800;
-  color: white;
-}
+@import "../stylesheets/Contact.scss";
 </style>
