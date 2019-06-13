@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      favicon: "/favicon.ico"
+      favicon: "./favicon.ico"
     })
   ],
   module: {
