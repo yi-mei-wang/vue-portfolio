@@ -11,18 +11,20 @@
         <div id="form">
           <h3>Drop me a line!</h3>
           <form method="POST">
-            <transition name="fade">
-              <div v-if="success" class="flash-success">
-                Your message has been sent. I'll get back to you ASAP.
-                <span
-                  @click="success=!success"
-                >✕</span>
-              </div>
-              <div v-if="failure" class="flash-failure">
-                All fields are required.
-                <span @click="failure=!failure">✕</span>
-              </div>
-            </transition>
+            <div class="form-group">
+              <transition name="fade">
+                <div v-if="success" class="flash-success">
+                  Your message has been sent. I'll get back to you ASAP.
+                  <span
+                    @click="success=false"
+                  >✕</span>
+                </div>
+                <div v-if="failure" class="flash-failure">
+                  All fields are required.
+                  <span @click="failure=false">✕</span>
+                </div>
+              </transition>
+            </div>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name">
