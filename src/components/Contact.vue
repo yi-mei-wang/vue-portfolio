@@ -12,23 +12,32 @@
           <h3>Drop me a line!</h3>
           <form>
             <transition name="fade">
-              <div v-if="show" class="flash">Your message has been sent. I'll get back to you ASAP.</div>
+              <div v-if="success" class="flash-success">
+                Your message has been sent. I'll get back to you ASAP.
+                <span
+                  @click="success=!success"
+                >✕</span>
+              </div>
+              <div v-if="failure" class="flash-failure">
+                All fields are required.
+                <span @click="failure=!failure">✕</span>
+              </div>
             </transition>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" name="name">
+              <input type="text" id="name" name="name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" name="email">
+              <input type="text" id="email" name="email">
             </div>
             <div class="form-group">
               <label for="number">Contact number</label>
-              <input type="text" name="number">
+              <input type="text" id="number" name="number">
             </div>
             <div class="form-group">
               <label for="message">Your message</label>
-              <textarea name="msg" rows="3"></textarea>
+              <textarea name="msg" id="msg" rows="3"></textarea>
             </div>
 
             <!-- On click, call function -->
@@ -57,27 +66,37 @@ export default {
   name: "Contact",
   data() {
     return {
-      show: true
+      success: false,
+      failure: false
     };
   },
   methods: {
     handleClick: function(e) {
-      let data = JSON.stringify({
-        name: "mei",
-        email: "yimei.wym@gmail.com",
-        msg: "oops"
-      });
       e.preventDefault();
-      axios
-        .post("https://hooks.zapier.com/hooks/catch/5153017/vjks0j/", data)
-        .then(res => {
-          if (res.data.status === "success") {
-            this.show = true;
-          }
-        })
-        .catch(err => {
-          console.log(err);
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let number = document.getElementById("number").value;
+      let msg = document.getElementById("msg").value;
+
+      if (!name.length || !email.length || !number.length || !msg.length) {
+        this.failure = true;
+      } else {
+        let data = JSON.stringify({
+          name,
+          email,
+          number,
+          msg
         });
+
+        axios
+          .post("https://hooks.zapier.com/hooks/catch/5153017/vjks0j/", data)
+          .then(res => {
+            this.success = res.data.status === "success" && true;
+          })
+          .catch(err => {
+            console.log(err);
+          });
+      }
     }
   }
 };
@@ -94,12 +113,24 @@ h3 {
   margin-bottom: 10px;
 }
 
-.flash {
+.flash-success,
+.flash-failure {
   width: 100%;
-  background: $success;
   padding: 0.5rem;
   font-weight: 300;
-  margin: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.flash-success {
+  background: $success;
+}
+
+.flash-failure {
+  background: $failure;
 }
 
 .contact-wrapper {
