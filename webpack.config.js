@@ -1,6 +1,5 @@
 var path = require("path");
 var webpack = require("webpack");
-var HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js",
@@ -9,11 +8,7 @@ module.exports = {
     publicPath: "/dist/",
     filename: "build.js"
   },
-  plugins: [
-    new HtmlWebPackPlugin({
-      favicon: "./favicon.ico"
-    })
-  ],
+
   module: {
     rules: [
       {
