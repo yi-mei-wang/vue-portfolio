@@ -1,28 +1,30 @@
 <template>
   <div class="wrapper">
-    <div>
-      <div class="notch"></div>
+    <div class="main">
+      <div>Wang Yi Mei© 2019 | Created on Vue.js</div>
     </div>
-    <div class="main">Wang Yi Mei© 2019 | Created on Vue.js</div>
   </div>
 </template>
 
 <script>
-export default {};
+import Contact from "./Contact";
+export default {
+  name: "Footer",
+  components: { Contact }
+};
 </script>
 
 <style lang="scss" scoped>
 .main {
-  background-color: white;
   padding: 0.7rem;
-  color: black;
   display: block;
-  height: 40vh;
   width: 100vw;
-  margin-bottom: 0;
+  margin: 0;
+  border-top: none;
 }
 
 .wrapper {
-  margin-top: 100px;
+  margin-top: 0px;
+  display: flex;
 }
 </style>

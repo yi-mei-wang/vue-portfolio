@@ -20,7 +20,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $primary;
+  background-color: $palepurple;
   margin: 0.5rem;
 }
 

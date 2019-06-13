@@ -4,26 +4,208 @@
       <div class="notch"></div>
     </div>
     <div class="main">
-      <h2>Contact me:</h2>
+      <h2>Get in touch!</h2>
       <span class="underline"></span>
 
-      <div>
-        <!-- Add in some icons/logos -->
-        <a href="mailto:contactmei.tk@gmail.com" target="blank">contactmei.tk@gmail.com</a>
-        <br>
-        <a href="http://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
-        <br>
-        <a href="http://www.github.com/yi-mei-wang" target="blank">Github</a>
+      <div class="contact-wrapper">
+        <div id="form">
+          <h3>Drop me a line!</h3>
+          <form>
+            <transition name="fade">
+              <div v-if="success" class="flash-success">
+                Your message has been sent. I'll get back to you ASAP.
+                <span
+                  @click="success=!success"
+                >✕</span>
+              </div>
+              <div v-if="failure" class="flash-failure">
+                All fields are required.
+                <span @click="failure=!failure">✕</span>
+              </div>
+            </transition>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="number">Contact number</label>
+              <input type="text" id="number" name="number">
+            </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea name="msg" id="msg" rows="3"></textarea>
+            </div>
+
+            <!-- On click, call function -->
+            <div class="form-group">
+              <button @click="handleClick">SEND MESSAGE</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="contact-links">
+          <div>
+            <h3>Other links</h3>
+            <div id="links">
+              <div class="link-group">
+                <a href="https://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
+              </div>
+
+              <div class="link-group">
+                <a href="https://www.github.com/yi-mei-wang" target="blank">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: "Contact"
+  name: "Contact",
+  data() {
+    return {
+      success: false,
+      failure: false
+    };
+  },
+  methods: {
+    handleClick: function(e) {
+      e.preventDefault();
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let number = document.getElementById("number").value;
+      let msg = document.getElementById("msg").value;
+
+      if (!name.length || !email.length || !number.length || !msg.length) {
+        this.failure = true;
+      } else {
+        let data = JSON.stringify({
+          name,
+          email,
+          number,
+          msg
+        });
+
+        axios
+          .post("https://hooks.zapier.com/hooks/catch/5153017/vjks0j/", data)
+          .then(res => {
+            this.success = res.data.status === "success" && true;
+          })
+          .catch(err => {
+            console.log(err);
+          });
+      }
+    }
+  }
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../stylesheets/_variables.scss";
+
+.wrapper,
+.main {
+  margin-bottom: 0;
+}
+
+.main {
+  width: 100vw;
+  border-bottom: none;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.flash-success,
+.flash-failure {
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.flash-success {
+  background: $success;
+}
+
+.flash-failure {
+  background: $failure;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#form,
+#contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(80vw / 2);
+  min-width: 250px;
+  margin: 0.5rem;
+}
+
+form,
+#links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group,
+.link-group {
+  width: 80%;
+  display: block;
+}
+
+label {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #666;
+}
+
+input {
+  height: 1.6rem;
+}
+
+button {
+  padding: 0.5rem;
+  height: 40px;
+  border-radius: 0;
+  letter-spacing: 2px;
+  border: none;
+  background-color: $vuegreen;
+  font-weight: 800;
+  color: white;
+}
 </style>
