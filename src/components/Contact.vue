@@ -12,7 +12,7 @@
           <h3>Drop me a line!</h3>
           <form>
             <transition name="fade">
-              <div v-if="show" class="flash">Your message has been sent!</div>
+              <div v-if="show" class="flash">Your message has been sent. I'll get back to you ASAP.</div>
             </transition>
             <div class="form-group">
               <label for="name">Name</label>
@@ -57,7 +57,7 @@ export default {
   name: "Contact",
   data() {
     return {
-      show: false
+      show: true
     };
   },
   methods: {
@@ -96,8 +96,10 @@ h3 {
 
 .flash {
   width: 100%;
-  background: $palepurple;
+  background: $success;
   padding: 0.5rem;
+  font-weight: 300;
+  margin: 0.5rem;
 }
 
 .contact-wrapper {
