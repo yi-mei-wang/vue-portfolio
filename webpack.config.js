@@ -1,6 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
 var HtmlWebPackPlugin = require("html-webpack-plugin");
+let FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js",
@@ -12,7 +13,8 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       favicon: "favicon.png"
-    })
+    }),
+    new FaviconsWebpackPlugin("favicon.png")
   ],
   module: {
     rules: [
