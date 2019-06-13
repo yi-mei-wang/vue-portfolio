@@ -11,10 +11,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      filename: "index.html",
-      template: "index.html",
-      inject: true,
-      favicon: "./favicon.ico"
+      favicon: "/favicon.ico"
     })
   ],
   module: {
