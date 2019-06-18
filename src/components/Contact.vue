@@ -58,11 +58,15 @@
             <h3>Other links</h3>
             <div id="links">
               <div class="link-group">
-                <a href="https://www.linkedin.com/in/wangyimei" target="blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/wangyimei" target="blank">
+                  <img src="src/assets/github.png" alt="Github logo">
+                </a>
               </div>
 
               <div class="link-group">
-                <a href="https://www.github.com/yi-mei-wang" target="blank">Github</a>
+                <a href="https://www.github.com/yi-mei-wang" target="blank">
+                  <img src="src/assets/github.png" alt="Github logo">
+                </a>
               </div>
             </div>
           </div>
