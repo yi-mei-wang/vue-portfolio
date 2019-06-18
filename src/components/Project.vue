@@ -1,62 +1,61 @@
 <template>
   <div>
-    <div class="image-container">
+    <!-- <div class="image-container">
       <h3 class="proj-title">{{title}}</h3>
       <img :src="img0" class="proj-thumbnail clickable" v-on:click="show = !show">
-    </div>
-    <transition name="fade">
-      <div v-if="show" class="description-container clickable" v-on:click.self="show = !show">
-        <div class="description">
-          <h2 class="proj-title">{{title}}</h2>
-          <span class="underline"></span>
-          <div class="row">
-            <div class="col-6">
-              <carousel
-                :per-page="1"
-                :mouse-drag="false"
-                :navigationEnabled="true"
-                :loop="true"
-                :autoplay="true"
-                :autoplayTimeout="3500"
-              >
-                <slide>
-                  <img
-                    :src="img0"
-                    class="proj-slide"
-                    style="display:block; margin-left:auto; margin-right: auto;"
-                  >
-                </slide>
-                <slide>
-                  <img
-                    :src="img1"
-                    class="proj-slide"
-                    style="display:block; margin-left:auto; margin-right: auto;"
-                  >
-                </slide>
-                <slide>
-                  <img
-                    :src="img2"
-                    class="proj-slide"
-                    style="display:block; margin-left:auto; margin-right: auto;"
-                  >
-                </slide>
-              </carousel>
-            </div>
+    </div>-->
 
-            <div class="col-6">
-              <p>{{p0}}</p>
-              <p>{{p1}}</p>
-              <p>{{p2}}</p>
-            </div>
+    <div class="description-container clickable">
+      <div class="description">
+        <h2 class="proj-title">{{title}}</h2>
+        <span class="underline"></span>
+        <div class="row">
+          <div class="col-6">
+            <carousel
+              :per-page="1"
+              :mouse-drag="false"
+              :navigationEnabled="true"
+              :loop="true"
+              :autoplay="true"
+              :autoplayTimeout="3500"
+            >
+              <slide>
+                <img
+                  :src="img0"
+                  class="carousel-img"
+                  style="display:block; margin-left:auto; margin-right: auto;"
+                >
+              </slide>
+              <slide>
+                <img
+                  :src="img1"
+                  class="carousel-img"
+                  style="display:block; margin-left:auto; margin-right: auto;"
+                >
+              </slide>
+              <slide>
+                <img
+                  :src="img2"
+                  class="carousel-img"
+                  style="display:block; margin-left:auto; margin-right: auto;"
+                >
+              </slide>
+            </carousel>
           </div>
-          <div>
-            <a :href="link" target="blank">
-              <button class="clickable">See it live!</button>
-            </a>
+
+          <div class="col-6">
+            <p>{{p0}}</p>
+            <p>{{p1}}</p>
+            <p>{{p2}}</p>
           </div>
         </div>
+        <div>
+          <a :href="link" target="blank">
+            <button class="clickable">See it live!</button>
+          </a>
+        </div>
       </div>
-    </transition>
+    </div>
   </div>
 </template>
 
