@@ -19,8 +19,12 @@
                     @click="success=false"
                   >✕</span>
                 </div>
-                <div v-if="failure" class="clickable flash-failure">
+                <div v-if="missing" class="clickable flash-failure">
                   All fields are required.
+                  <span @click="missing=false">✕</span>
+                </div>
+                <div v-if="failure" class="clickable flash-failure">
+                  An error occurred, please try again later.
                   <span @click="failure=false">✕</span>
                 </div>
               </transition>
@@ -76,7 +80,8 @@ export default {
   data() {
     return {
       success: false,
-      failure: false
+      failure: false,
+      missing: false
     };
   },
   methods: {
@@ -88,7 +93,7 @@ export default {
       let msg = document.getElementById("msg").value;
 
       if (!name.length || !email.length || !number.length || !msg.length) {
-        this.failure = true;
+        this.missing = true;
       } else {
         let data = JSON.stringify({
           name,
@@ -103,7 +108,7 @@ export default {
             this.success = res.data.status === "success" && true;
           })
           .catch(err => {
-            console.log(err);
+            this.failure = true;
           });
       }
     }
