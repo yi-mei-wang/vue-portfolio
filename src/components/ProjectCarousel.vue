@@ -1,5 +1,9 @@
 <template>
   <div class="main">
+    <div class="image-container">
+      <h3 class="proj-title">{{title}}</h3>
+      <img :src="img0" class="proj-thumbnail clickable" v-on:click="currentSlide = 1">
+    </div>
     <transition name="fade">
       <div v-if="show" class="carousel-main clickable" v-on:click.self="show = !show">
         <div class="carousel-container">
@@ -57,7 +61,8 @@ export default {
   name: "ProjectCarousel",
   data() {
     return {
-      show: true
+      show: true,
+      currentSlide: 1
     };
   },
   components: {

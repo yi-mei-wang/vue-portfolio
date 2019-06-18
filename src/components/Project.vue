@@ -1,10 +1,5 @@
 <template>
   <div>
-    <!-- <div class="image-container">
-      <h3 class="proj-title">{{title}}</h3>
-      <img :src="img0" class="proj-thumbnail clickable" v-on:click="show = !show">
-    </div>-->
-
     <div class="description-container clickable">
       <div class="description">
         <h2 class="proj-title">{{title}}</h2>
