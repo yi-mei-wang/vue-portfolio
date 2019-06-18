@@ -17,7 +17,9 @@
           img0="https://meistagram.s3.amazonaws.com/meistagram0.png"
           img1="https://meistagram.s3.amazonaws.com/meistagram1.png"
           img2="https://meistagram.s3.amazonaws.com/meistagram2.png"
-          description="An Instagram clone built using React.js that was completed within the first two weeks of learning the framework. I tried to incorporate as many design elements from Instagram as possible, such as the double-tap-to-like feature. I also learnt how to use the Context API and Higher-Order Components."
+          p0="An Instagram clone built using React.js that was completed within the first two weeks of learning the framework. "
+          p1="I tried to incorporate as many design elements from Instagram as possible, such as the double-tap-to-like feature. "
+          p2="I also learnt how to use the Context API and Higher-Order Components."
         />
         <Project
           class="project"
@@ -26,7 +28,9 @@
           img0="https://meistagram.s3.amazonaws.com/meisterkram0.png"
           img1="https://meistagram.s3.amazonaws.com/meisterkram1.png"
           img2="https://meistagram.s3.amazonaws.com/meisterkram3.png"
-          description="Yet another Instagram clone, but built using Python Flask. This was my first time working on the full stack. Implemented additional features such as Google OAuth to manage login and a payment feature to allow Meisterkrammers to make a donation to other users."
+          p0="Yet another Instagram clone, but built using Python Flask."
+          p1="This was my first time working on the full stack. "
+          p2="Implemented additional features such as Google OAuth to manage login and a payment feature to allow Meisterkrammers to make a donation to other users."
         />
         <Project
           class="project"
@@ -35,7 +39,9 @@
           img0="https://meistagram.s3.amazonaws.com/advengers0.png"
           img1="https://meistagram.s3.amazonaws.com/advengers1.png"
           img2="https://meistagram.s3.amazonaws.com/advengers2.png"
-          description="A billboard advert automator to make the lives of marketers and billboard vendors easier. Currently, the advert life cycle can be rather long and tedious. The software simplifies and handles everything, from the receiving of orders, scheduling of time slots, moderating of advert content and updating of billboard. The front end was built in React while the back-end server was built in Python. I wrote a script to train an AI model to identify and remove content that is not allowed on the advertising platform, such as alcohol, cigarettes and weapons."
+          p0="A billboard advert automator to make the lives of marketers and billboard vendors easier. Currently, the advert life cycle can be rather long and tedious. The software simplifies and handles everything, from the receiving of orders, scheduling of time slots, moderating of advert content and updating of billboard. The front end was built in React while the back-end server was built in Python. I wrote a script to train an AI model to identify and remove content that is not allowed on the advertising platform, such as alcohol, cigarettes and weapons."
+          p1="A billboard advert automator to make the lives of marketers and billboard vendors easier. Currently, the advert life cycle can be rather long and tedious. The software simplifies and handles everything, from the receiving of orders, scheduling of time slots, moderating of advert content and updating of billboard. The front end was built in React while the back-end server was built in Python. I wrote a script to train an AI model to identify and remove content that is not allowed on the advertising platform, such as alcohol, cigarettes and weapons."
+          p2="A billboard advert automator to make the lives of marketers and billboard vendors easier. Currently, the advert life cycle can be rather long and tedious. The software simplifies and handles everything, from the receiving of orders, scheduling of time slots, moderating of advert content and updating of billboard. The front end was built in React while the back-end server was built in Python. I wrote a script to train an AI model to identify and remove content that is not allowed on the advertising platform, such as alcohol, cigarettes and weapons."
         />
       </div>
     </div>

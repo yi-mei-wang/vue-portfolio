@@ -44,7 +44,10 @@
             </div>
 
             <div class="col-6">
-              <p>{{description}}</p>
+              <p>{{p0}}</p>
+              <p>{{p1}}</p>
+              <p>{{p2}}</p>
+              <!-- This should be a button at the bottom. Call to action should be eye catching -->
               <p>
                 <a :href="link" target="blank">See it live!</a>
               </p>
@@ -61,7 +64,7 @@ import { Carousel, Slide } from "vue-carousel";
 export default {
   name: "Project",
   // props: { title: String, link: String, description: String, img: link },
-  props: ["title", "link", "description", "img0", "img1", "img2"],
+  props: ["title", "link", "img0", "img1", "img2", "p0", "p1", "p2"],
   data() {
     return {
       show: false
