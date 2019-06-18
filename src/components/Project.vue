@@ -2,7 +2,7 @@
   <div>
     <div class="image-container">
       <h3 class="proj-title">{{title}}</h3>
-      <img :src="img0" class="proj-thumbnail" v-on:click="show = !show">
+      <img :src="img0" class="proj-thumbnail clickable" v-on:click="show = !show">
     </div>
     <transition name="fade">
       <div v-if="show" class="description-container" v-on:click.self="show = !show">

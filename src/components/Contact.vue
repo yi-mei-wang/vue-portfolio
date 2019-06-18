@@ -13,13 +13,13 @@
           <form method="POST">
             <div class="form-group">
               <transition name="fade">
-                <div v-if="success" class="flash-success">
+                <div v-if="success" class="clickable flash-success">
                   Your message has been sent. I'll get back to you ASAP.
                   <span
                     @click="success=false"
                   >✕</span>
                 </div>
-                <div v-if="failure" class="flash-failure">
+                <div v-if="failure" class="clickable flash-failure">
                   All fields are required.
                   <span @click="failure=false">✕</span>
                 </div>
@@ -44,7 +44,7 @@
 
             <!-- On click, call function -->
             <div class="form-group">
-              <button @click="handleClick">SEND MESSAGE</button>
+              <button class="clickable" @click="handleClick">SEND MESSAGE</button>
             </div>
           </form>
         </div>
