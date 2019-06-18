@@ -47,11 +47,12 @@
               <p>{{p0}}</p>
               <p>{{p1}}</p>
               <p>{{p2}}</p>
-              <!-- This should be a button at the bottom. Call to action should be eye catching -->
-              <p>
-                <a :href="link" target="blank">See it live!</a>
-              </p>
             </div>
+          </div>
+          <div>
+            <a :href="link" target="blank">
+              <button class="clickable">See it live!</button>
+            </a>
           </div>
         </div>
       </div>
