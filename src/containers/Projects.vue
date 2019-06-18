@@ -23,15 +23,7 @@ import ProjectCarousel from "../components/ProjectCarousel";
 
 export default {
   name: "Projects",
-  data() {
-    return {
-      show: false
-    };
-  },
   components: {
-    Carousel,
-    Project,
-    Slide,
     ProjectCarousel
   }
 };
