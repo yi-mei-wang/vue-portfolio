@@ -1,12 +1,6 @@
 .description-container {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  background-color: rgba(20, 20, 20, 0.6);
+  width: 100%;
+  height: 100%;
 }
 
 .description {
@@ -27,6 +21,10 @@
     line-height: 1.5rem;
     padding: 1rem;
   }
+}
+
+.project {
+  height: 80vh;
 }
 
 .proj-thumbnail {
@@ -53,7 +51,7 @@
   text-align: left;
 }
 
-.proj-slide {
+.carousel-img {
   max-height: 400px;
   height: 100%;
   margin: 1rem;
@@ -64,7 +62,7 @@
 }
 
 @media (max-width: 426px) {
-  .proj-slide {
+  .carousel-img {
     max-width: 300px;
     width: 100%;
   }
