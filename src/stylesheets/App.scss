@@ -112,3 +112,14 @@ a {
 .clickable {
   cursor: pointer;
 }
+
+button {
+  padding: 0.5rem 1rem;
+  height: 40px;
+  border-radius: 0;
+  letter-spacing: 2px;
+  border: none;
+  background-color: $vuegreen;
+  font-weight: 800;
+  text-transform: uppercase;
+}
