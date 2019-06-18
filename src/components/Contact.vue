@@ -59,12 +59,12 @@
             <div id="links">
               <div class="link-group">
                 <a href="https://www.github.com/yi-mei-wang" target="blank">
-                  <img src="src/assets/github.png" alt="GitHub logo">
+                  <img src="https://meistagram.s3.amazonaws.com/github.png" alt="GitHub logo">
                 </a>
               </div>
               <div class="link-group">
                 <a href="https://www.linkedin.com/in/wangyimei" target="blank">
-                  <img src="src/assets/linkedin.png" alt="LinkedIn logo">
+                  <img src="https://meistagram.s3.amazonaws.com/linkedin.png" alt="LinkedIn logo">
                 </a>
               </div>
             </div>
