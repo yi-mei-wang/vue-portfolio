@@ -9,6 +9,8 @@
         <div class="carousel-container">
           <carousel :per-page="1" :mouse-drag="false" :navigationEnabled="true" :loop="true">
             <slide>
+              <!-- My content seems to be stacking on top of each other -->
+
               <Project
                 class="project"
                 title="Meistagram"
