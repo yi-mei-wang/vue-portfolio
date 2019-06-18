@@ -31,9 +31,6 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  height: 300px;
 }
 </style>

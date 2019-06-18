@@ -7,10 +7,15 @@
     <transition name="fade">
       <div v-if="show" class="carousel-main clickable" v-on:click.self="show = !show">
         <div class="carousel-container">
-          <carousel :per-page="1" :mouse-drag="false" :navigationEnabled="true" :loop="true">
+          <carousel
+            :per-page="1"
+            :mouse-drag="false"
+            :navigationEnabled="true"
+            :loop="true"
+            :value="2"
+            class="carousel"
+          >
             <slide>
-              <!-- My content seems to be stacking on top of each other -->
-
               <Project
                 class="project"
                 title="Meistagram"
@@ -64,7 +69,8 @@ export default {
   data() {
     return {
       show: true,
-      currentSlide: 1
+      currentSlide: 1,
+      carouselWidth: "100%"
     };
   },
   components: {
@@ -88,12 +94,8 @@ h3 {
 }
 
 .carousel-main {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   z-index: 9;
   background-color: rgba(20, 20, 20, 0.6);
 }
@@ -106,5 +108,10 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.VueCarousel {
+  width: 90vw;
 }
 </style>
