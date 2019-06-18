@@ -19,7 +19,7 @@
       <!-- Please rephrase omg -->
       <p>
         I am a
-        <span class="highlight">full stack web developer</span> looking for freelance opportunities.
+        <span class="highlight">full stack web developer</span> looking for opportunities to expand my skillset.
       </p>
 
       <p>
