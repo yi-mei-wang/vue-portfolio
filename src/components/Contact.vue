@@ -98,6 +98,7 @@ export default {
       if (!name.length || !email.length || !number.length || !msg.length) {
         this.missing = true;
       } else {
+        this.missing = false;
         let data = JSON.stringify({
           name,
           email,
