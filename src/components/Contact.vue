@@ -9,7 +9,8 @@
 
       <div class="contact-wrapper">
         <div id="form">
-          <h3>Drop me a line!</h3>
+          <h4>Have an opportunity for me or an idea on how to improve this space?</h4>
+          <h3 class="highlight">Drop me a line!</h3>
           <form method="POST">
             <div class="form-group">
               <transition name="fade">
@@ -122,4 +123,8 @@ export default {
 
 <style scoped lang="scss">
 @import "../stylesheets/Contact.scss";
+h4 {
+  font-family: "Lato", "Roboto", "Avenir", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 0;
+}
 </style>
