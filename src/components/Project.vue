@@ -78,18 +78,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "../stylesheets/Project.scss";
-
-h3 {
-  margin-bottom: 10px;
-}
-
-.close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  font-weight: 900;
-  font-size: 1.2rem;
-  color: #555;
-}
 </style>
