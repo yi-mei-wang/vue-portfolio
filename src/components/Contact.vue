@@ -10,8 +10,25 @@
       <div class="contact-wrapper">
         <div id="form">
           <h4>Have an opportunity for me or an idea on how to improve this space?</h4>
-          <h3 class="highlight">Drop me a line!</h3>
+          <h3 class="highlight">Drop me an email!</h3>
           <form method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="number">Contact number</label>
+              <input type="text" id="number" name="number">
+            </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea name="msg" id="msg" rows="3"></textarea>
+            </div>
+
             <div class="form-group">
               <transition name="fade">
                 <div v-if="success" class="clickable flash-success">
@@ -30,24 +47,7 @@
                 </div>
               </transition>
             </div>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email">
-            </div>
-            <div class="form-group">
-              <label for="number">Contact number</label>
-              <input type="text" id="number" name="number">
-            </div>
-            <div class="form-group">
-              <label for="message">Your message</label>
-              <textarea name="msg" id="msg" rows="3"></textarea>
-            </div>
 
-            <!-- On click, call function -->
             <div class="form-group">
               <button class="clickable" @click="handleClick">SEND MESSAGE</button>
             </div>

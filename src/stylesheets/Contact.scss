@@ -19,7 +19,7 @@ h3 {
   width: 100%;
   padding: 0.5rem;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  // margin-bottom: 0.5rem;
 
   span {
     margin-left: 0.5rem;
@@ -66,15 +66,21 @@ form,
 
 .form-group {
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-group {
   margin: 0.5rem;
 }
+
 label {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: block;
   text-align: left;
+  width: 100%;
 }
 
 input,
@@ -90,6 +96,12 @@ input {
   height: 1.6rem;
 }
 
+@media (max-width: 426px) {
+  input {
+    height: 1.2rem;
+  }
+}
+
 img {
   width: 50px;
 }
@@ -98,4 +110,8 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+button {
+  width: 100%;
 }
