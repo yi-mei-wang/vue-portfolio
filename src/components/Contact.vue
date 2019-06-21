@@ -69,6 +69,14 @@
                 </a>
               </div>
             </div>
+
+            <div id="resume">
+              <h3>Resume</h3>
+
+              <a
+                href="https://drive.google.com/file/d/1NM8zqk4BodUErUWpXj_vnzw7MWW6vI7T/view?usp=sharing"
+              >Check out my resume</a>
+            </div>
           </div>
         </div>
       </div>
@@ -123,8 +131,4 @@ export default {
 
 <style scoped lang="scss">
 @import "../stylesheets/Contact.scss";
-h4 {
-  font-family: "Lato", "Roboto", "Avenir", "Helvetica Neue", Arial, sans-serif;
-  margin-bottom: 0;
-}
 </style>
