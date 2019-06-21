@@ -7,6 +7,7 @@
     <transition name="fade">
       <div v-if="show" class="description-container clickable" v-on:click.self="show = !show">
         <div class="description">
+          <button class="close-button" v-on:click="show =! show">✕</button>
           <h2 class="proj-title">{{title}}</h2>
           <span class="underline"></span>
           <div class="row">
@@ -80,5 +81,15 @@ export default {
 
 h3 {
   margin-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #555;
 }
 </style>
