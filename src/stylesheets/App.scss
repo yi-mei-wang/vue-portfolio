@@ -124,8 +124,9 @@ button {
   color: #272822;
 
   &:hover {
-    background-color: #7dcfaa;
+    background-color: #468d6d;
+    color: white;
     transform: scale(0.99);
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 }
