@@ -76,10 +76,14 @@ h3 {
   font-weight: 900;
   font-size: 1.2rem;
   color: #555;
+  text-align: center;
+  letter-spacing: 0;
 
   &:hover {
-    background-color: $vuegreen;
+    background-color: #7dcfaa;
     color: white;
+    transform: scale(0.99);
+    transition: 0.4s ease-in-out;
   }
 }
 

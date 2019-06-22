@@ -7,7 +7,7 @@
     <transition name="fade">
       <div v-if="show" class="description-container clickable" v-on:click.self="show = !show">
         <div class="description">
-          <button class="close-button" v-on:click="show =! show">✕</button>
+          <button class="close-button clickable" v-on:click="show =! show">✕</button>
           <h2 class="proj-title">{{title}}</h2>
           <span class="underline"></span>
           <div class="row">
