@@ -73,7 +73,7 @@
             <div id="resume">
               <h3>Resume</h3>
               <a
-                href="https://drive.google.com/file/d/1NM8zqk4BodUErUWpXj_vnzw7MWW6vI7T/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NM8zqk4BodUErUWpXj_vnzw7MWW6vI7T/view?usp=sharing" target="blank"
               >Check out my resume</a>
             </div>
           </div>
