@@ -2,7 +2,7 @@
   <div>
     <div class="image-container">
       <h3 class="proj-title">{{title}}</h3>
-      <img :src="img0" class="proj-thumbnail clickable" v-on:click="show = !show">
+      <img :src="img0" class="proj-thumbnail clickable" v-on:click="show = !show" />
     </div>
     <transition name="fade">
       <div v-if="show" class="description-container clickable" v-on:click.self="show = !show">
@@ -25,25 +25,24 @@
                     :src="img0"
                     class="proj-slide"
                     style="display:block; margin-left:auto; margin-right: auto;"
-                  >
+                  />
                 </slide>
                 <slide>
                   <img
                     :src="img1"
                     class="proj-slide"
                     style="display:block; margin-left:auto; margin-right: auto;"
-                  >
+                  />
                 </slide>
                 <slide>
                   <img
                     :src="img2"
                     class="proj-slide"
                     style="display:block; margin-left:auto; margin-right: auto;"
-                  >
+                  />
                 </slide>
               </carousel>
-            </div>
-
+            </div>Scroll down to see more
             <div class="col-6">
               <p>{{p0}}</p>
               <p>{{p1}}</p>
