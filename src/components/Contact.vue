@@ -14,15 +14,15 @@
           <form method="POST">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" />
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" id="email" name="email">
+              <input type="text" id="email" name="email" />
             </div>
             <div class="form-group">
               <label for="number">Contact number</label>
-              <input type="text" id="number" name="number">
+              <input type="text" id="number" name="number" />
             </div>
             <div class="form-group">
               <label for="message">Your message</label>
@@ -60,19 +60,18 @@
             <div id="links">
               <div class="link-group">
                 <a href="https://www.github.com/yi-mei-wang" target="blank">
-                  <img src="https://meistagram.s3.amazonaws.com/github.png" alt="GitHub logo">
+                  <img src="https://meistagram.s3.amazonaws.com/github.png" alt="GitHub logo" />
                 </a>
               </div>
               <div class="link-group">
                 <a href="https://www.linkedin.com/in/wangyimei" target="blank">
-                  <img src="https://meistagram.s3.amazonaws.com/linkedin.png" alt="LinkedIn logo">
+                  <img src="https://meistagram.s3.amazonaws.com/linkedin.png" alt="LinkedIn logo" />
                 </a>
               </div>
             </div>
 
             <div id="resume">
               <h3>Resume</h3>
-
               <a
                 href="https://drive.google.com/file/d/1NM8zqk4BodUErUWpXj_vnzw7MWW6vI7T/view?usp=sharing"
               >Check out my resume</a>
@@ -116,7 +115,7 @@ export default {
         });
 
         axios
-          .post("https://hooks.zapier.com/hooks/catch/5153017/vjks0j/", data)
+          .post("https://hooks.zapier.com/hooks/catch/5153017/obmuyv3/", data)
           .then(res => {
             this.success = res.data.status === "success" && true;
           })
