@@ -9,7 +9,12 @@
 
       <p>
         In my past life, I was a
-        Psychology graduate who went on to become an English teacher. However, I knew working with children was not my calling. I felt lost then because I didn't know what to do.
+        Psychology graduate who went on to work in a ministry in Singapore. However, I was miserable and knew that that was not my calling. I felt
+        <span
+          class="highlight"
+        >
+          <strong>lost</strong>
+        </span> then because I didn't know what to do.
       </p>
       <p>That was until I met programming and the rest, as they said, was history. I started with Harvard's CS50 and swiftly fell in love with C (seriously). I eventually moved on to Python and JavaScript.</p>
 
