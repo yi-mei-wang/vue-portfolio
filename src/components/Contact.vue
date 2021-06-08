@@ -64,7 +64,7 @@
                 </a>
               </div>
               <div class="link-group">
-                <a href="https://www.linkedin.com/in/wangyimei" target="blank">
+                <a href="https://www.linkedin.com/in/yi-mei-wang" target="blank">
                   <img src="https://meistagram.s3.amazonaws.com/linkedin.png" alt="LinkedIn logo" />
                 </a>
               </div>

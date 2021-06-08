@@ -4,46 +4,41 @@
       <div class="notch"></div>
     </div>
     <div class="main">
-      <h3>Story time!</h3>
-      <span class="underline"></span>
-
-      <p>
-        In my past life, I was a
-        Psychology graduate who went on to work in a ministry in Singapore. However, I was miserable and knew that that was not my calling. I felt
-        <span
-          class="highlight"
-        >
-          <strong>lost</strong>
-        </span> then because I didn't know what to do.
-      </p>
-      <p>That was until I met programming and the rest, as they said, was history. I started with Harvard's CS50 and swiftly fell in love with C (seriously). I eventually moved on to Python and JavaScript.</p>
-
       <h2>Who am I?</h2>
       <span class="underline"></span>
       <!-- STORY TIME -->
       <!-- Please rephrase omg -->
       <p>
-        I am a
-        <span class="highlight">full stack web developer</span> looking for opportunities to expand my skillset.
-      </p>
-
-      <p>
-        My background in
-        Psychology has made me more attuned to user needs and behaviour, which helps me to design user interfaces with
-        <span
-          class="highlight"
-        >good UX</span>.
+        I like to think of myself as a <span class="highlight">T-shaped developer</span> with a focus in the back-end.
       </p>
       <p>
-        On the other hand, my strong
-        <span class="highlight">problem-solving</span>,
-        <span class="highlight">debugging</span>, and
-        <span class="highlight">logical thinking skills</span> make me a good programmer, especially when working on the backend.
+        Most of my industry experience has been in 
+        <span class="highlight">back-end development</span> but I also have some experience in <i>devops</i>, <i>Cloud</i>, <i>frontend (mostly React)</i>, and <i>digital marketing</i>. 
       </p>
+      <p>Contact me via any of the channels below. I would love to talk to you about how I can help you achieve your development and/or organisational goals.</p>
+      
+      
+    
+    <h3>Story time!</h3>
+    <span class="underline"></span>
+    
+    <p>
+      Many people ask me how a psychology grad ended up doing what I'm doing. I started with Harvard's CS50 and C-riously fell in love with C. 
+    </p>
+    <p>
+      I eventually moved on to Python and JavaScript, but I was thrown into <span class="highlight">Java</span> at my first enterprise job and now Java is my favourite language.
+    </p>
 
-      <p>Contact me via any of the channels below. I would love to talk to you about how I can help you achieve your design and/or development goals.</p>
-    </div>
+    <p>
+      I built this site using Vue in 2019, 2 months after learning React. I've been wanting to give it a revamp, but like many other devs, I'm busy starting new projects and not finishing them. 🤷
+    </p>
+    <p>
+      Since building this, frontend and I don't speak as often anymore, so please get in touch if you have any ideas how to improve the design. I'd like to hear your thoughts!
+    </p>
+
+    
   </div>
+</div>
 </template>
 
 <script>
@@ -63,7 +58,7 @@ export default {
   }
 
   p {
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 }
 </style>

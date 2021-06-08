@@ -5,16 +5,16 @@
       <p>I'm</p>
       <p class="ampersand">&</p>
       <p>I'm</p>
-      <p>Full</p>
-      <p>Web</p>
+      <p>Soft</p>
+      <p>Engi</p>
     </div>
     <!-- Should disappear if view width is smaller than a mobile -->
     <div id="right">
       <p>Mei</p>
       <p>&</p>
       <p>a</p>
-      <p>Stack</p>
-      <p>Developer.</p>
+      <p>ware</p>
+      <p>neer.</p>
     </div>
   </div>
 </template>

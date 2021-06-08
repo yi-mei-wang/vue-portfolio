@@ -6,6 +6,8 @@
     <div class="main">
       <h2>Skills</h2>
       <span class="underline"></span>
+      <br>
+      <small><i><b>Very</b> outdated - I promise I'm working on it!</i></small>
 
       <div class="skill-title">
         <h4>Languages</h4>
